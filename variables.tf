@@ -45,3 +45,35 @@ variable "fargate_memory" {
   description = "Fargate instance memory to provision (in MiB)"
   default     = "512"
 }
+
+### Auto Scaling
+variable "ami" {
+  ## Nao consegui criar imagem a partir da task do ECS, entao estou utilizando um padrao
+  default = "ami-e1c33f8a"
+  description = "AMI id to launch, must be in the region specified by the region variable"
+}
+
+variable "instance_type" {
+    default = "m1.small"
+    description = "Name of the AWS instance type"
+}
+
+variable "min_size" {
+    default = "1"
+    description = "Minimum number of instances to run in the group"
+}
+
+variable "max_size" {
+    default = "5"
+    description = "Maximum number of instances to run in the group"
+}
+
+variable "desired_capacity" {
+    default = "1"
+    description = "Desired number of instances to run in the group"
+}
+
+variable "availability_zones" {
+    default = "us-east-1a"
+    description = "Comma separated list of EC2 availability zones to launch instances, must be within region"
+}
