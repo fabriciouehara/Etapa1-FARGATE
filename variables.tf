@@ -4,11 +4,11 @@ variable "aws_region" {
 }
 
 variable "access_key" {
-  default = "AKIAJQMMV5DMKRIWJNCA"
+  default = "XXXXXXXXXXXXXXXXXXXX"
 }
 
 variable "secret_key" {
-  default = "TWpIPaWaSsYNssoaOIzZ2ddnImPqg6fqhnKP017J"
+  default = "XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX"
 }
 
 variable "fargate_vpc" {
