@@ -12,7 +12,7 @@ variable "secret_key" {
 }
 
 variable "fargate_vpc" {
-  default = "10.20.0.0/16"
+  default = "10.30.0.0/16"
 }
 
 variable "az_count" {
